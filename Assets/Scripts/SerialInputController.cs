@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class SerialInputController : MonoBehaviour
 {
+
+    
     public Animator[] animationControllers;
     public GameObject endscr;
     public Text tmr;
@@ -17,7 +19,7 @@ public class SerialInputController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip;
     public JSONManager jsonman;
-    public const string portName = "COM12";
+    public string portName = "COM12";
 
     private SerialPort serialPort;
     private List<byte> inputBuffer;
